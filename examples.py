@@ -1,18 +1,18 @@
 from basketball_reference_scraper.teams import get_roster, get_team_stats, get_opp_stats, get_roster_stats, get_team_misc
 
-df = get_roster('GSW', 2019)
+df = get_roster('HOU', 2019)
 print(df)
 
-s = get_team_stats('GSW', 2019, data_format='PER_GAME')
+s = get_team_stats('HOU', 2019, data_format='PER_GAME')
 print(s)
 
-s = get_opp_stats('GSW', 2019, data_format='PER_GAME')
+s = get_opp_stats('HOU', 2019, data_format='PER_GAME')
 print(s)
 
-s = get_roster_stats('GSW', 2019, data_format='PER_GAME', playoffs=False)
+s = get_roster_stats('HOU', 2019, data_format='PER_GAME', playoffs=False)
 print(s)
 
-s = get_team_misc('GSW', 2019)
+s = get_team_misc('HOU', 2019)
 print(s)
 
 from basketball_reference_scraper.players import get_stats, get_game_logs
